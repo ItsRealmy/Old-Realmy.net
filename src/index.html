@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: hsl(0, 0%, 90%);
+      background-image: url(./static/clouds-light.png);
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-position: center;
+      animation: clouds 180s infinite linear;
+      color: hsl(0, 0%, 10%);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: hsl(0, 0%, 10%);
+        background-image: url(./static/clouds-dark.png);
+        color: hsl(0, 0%, 90%);
+      }
+    }
+
+    @keyframes clouds {
+      from {
+        background-position: 0 center;
+      }
+
+      to {
+        background-position: 1920px center;
+      }
+    }
+
+    #content {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: grid;
+      gap: 20px;
+      width: 500px;
+      line-height: 150%;
+    }
+
+    a {
+      color: inherit;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+
+  <title>Realmy.net</title>
+</head>
+
+<body>
+  <div id="content">
+    <h2>Hey, I'm Realmy!</h2>
+    <p>I'm a bit of a UI designer, a bit of a backend developer, and a bit of a frontend developer. I'm also a bit of a
+      furry.</p>
+    <p>I like data/analytics, software, Pokémon, Mario, Wii Sports, photoshopping, making/using alternatives to popular
+      products, furry art, music, looking for obsecure facts about certain companies on Wikipedia, and designing stuff.
+    </p>
+    <p>I typically don't use social media that much, so if you want to say hi, <a href="mailto:hello@realmy.net">send
+        me an email</a>.</p>
+  </div>
+</body>
+
+</html>
